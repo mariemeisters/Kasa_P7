@@ -1,0 +1,54 @@
+@import "../../utils/styles/colors";
+
+header {
+    height: 68px;
+    left: 100px;
+    top: 40px;
+    display: flex;
+    //flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 40px 100px 0 100px;
+        .header__logo {
+            height: 68px;
+            width: 210px;
+        }
+}
+
+.header__nav {
+    height: 34px;
+    width: 309px;
+    align-items: center;
+    display: flex;  
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+            li {
+                width: 116px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 34px;
+                text-align: right;
+                text-decoration-line: underline; // A voir
+            }
+            li:first-of-type {
+                width: 136px;
+            }
+            a {
+                color: $primary-color;
+            }
+      }
+}
+
+ul:first-child(n) {
+    padding: 30px;
+}
+@media screen and (max-width: 767px) {   
+
+}
