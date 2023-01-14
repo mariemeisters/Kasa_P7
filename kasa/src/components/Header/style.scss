@@ -1,14 +1,14 @@
-@import "../../utils/styles/colors";
+@import "../../utils/sass/colors";
 
 header {
+    position: relative;  // Le container de l'app (donc toute la page) est en position absolute
+    width:  90%;//1240px;
     height: 68px;
     left: 100px;
     top: 40px;
     display: flex;
-    //flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    padding: 40px 100px 0 100px;
         .header__logo {
             height: 68px;
             width: 210px;
@@ -18,8 +18,9 @@ header {
 .header__nav {
     height: 34px;
     width: 309px;
-    align-items: center;
-    display: flex;  
+    ul:first-child(n) {
+        padding: 30px;
+    }
       ul {
         display: flex;
         justify-content: space-between;
@@ -27,37 +28,30 @@ header {
         margin: 0;
         padding: 0;
         width: 100%;
+            li:first-of-type {
+                width: 136px;  
+            }  
             li {
                 width: 116px;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 24px;
-                line-height: 34px;
+                line-height: 142.6%;
                 text-align: right;
-                a.active {
-                    text-decoration: underline;
-                    color: $primary-color;
-                }
-            }
-            li:first-of-type {
-                width: 136px;
-                
-            }
-            a {
-                text-decoration: none;
-                color: $primary-color;
-            }
-            
-            
+                    a.active {
+                        text-decoration: underline;
+                        color: $primary-color;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+            }       
       }
 }
 
 
-
-ul:first-child(n) {
-    padding: 30px;
-}
 @media screen and (max-width: 767px) {   
 
 }

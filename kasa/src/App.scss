@@ -1,1 +1,7 @@
-@use './utils/styles/normalize.css'
+@use './utils/reset/normalize.css';
+
+.app__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

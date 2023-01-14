@@ -10,7 +10,7 @@ import Layout from './components/Layout';
 
 function App() {
     return (
-      
+      <div className='app__container'>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
             <Route path="/*" element={<Error404 />} />
           </Routes>
         </Layout>
-      
+        </div>
     );
   }
   
