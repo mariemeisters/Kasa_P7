@@ -1,7 +1,7 @@
 @import "../../utils/sass/colors";
 
 header {
-    position: relative;  // Le container de l'app (donc toute la page) est en position absolute
+    position: relative;  
     display: flex;
     width: 86%; // ce qui équivaut a 2px prêt aux dim de la maquette -- + de flexibilité
     height: 68px;
@@ -61,11 +61,12 @@ header {
             } 
     }
     .header__nav {
+        position: relative;
         height: 17px;
         width: 140px;
         ul {
             li:first-of-type {
-                    width: 59px;  
+                width: 59px;  
             }  
             li {
                 width: 71px;
