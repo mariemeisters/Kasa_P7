@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"; 
 
-function APropos() {
+function APropos() { 
   return (
     <div>
-      <h1> Page a propos</h1>
+      <h1> Page à propos</h1> 
     </div>
   )
 }
 
-export default APropos
+export default APropos 

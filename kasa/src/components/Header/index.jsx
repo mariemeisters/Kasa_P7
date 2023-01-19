@@ -4,20 +4,19 @@ import { ReactComponent as Logo } from '../../assets/Logo.svg';
 import './style.scss';
 
 
-const Header = () => {
+const Header = () => { 
+    let location = useLocation(); 
 
-    let location = useLocation();
-
-    return (
+    return ( 
         <header>
                 <div className='header__logo'><Logo/></div>
                 <nav className='header__nav'>
                     <ul>
-                        <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                        <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}> 
                             Accueil
                             </Link>
                         </li>
-                        <li><Link to="/a-propos" className={location.pathname === '/a-propos' ? 'active' : ''}>
+                        <li><Link to="/a-propos" className={location.pathname === '/a-propos' ? 'active' : ''}> 
                             A Propos
                             </Link>
                         </li>
@@ -27,4 +26,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header; 

@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"; 
 
-function FicheLogement() {
+function FicheLogement() { 
   return (
     <div>
-      <h1> Page fiche logement</h1>
+      <h1> Page fiche logement</h1> 
     </div>
   )
 }

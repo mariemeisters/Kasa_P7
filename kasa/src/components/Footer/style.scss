@@ -10,23 +10,38 @@ footer {
     display: flex;
     justify-content: center;
         .footer__logo {
+            height: 39.44px;
             position: absolute;
-            top: 31.58%;
+            top: 66px;
         }
         p {
-            margin: 0;
+            margin: 0px;
             height: 46px;
-            width: 513px;
+            width: 100%;
             position: absolute;
-            color: $secondary-color;
-            bottom: 13.88%;
+            bottom: 29px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: 24px;
-            line-height: 34px;
+            line-height: 142.6%;
+            color: $secondary-color;
         }
 }
 
+@media screen and (max-width: 767px) {   
+ 
+    footer {
+        .footer__logo {
+            top: 62px;
+        }
+        p {
+            height: 46px;
+            bottom: 62px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}

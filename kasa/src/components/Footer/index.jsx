@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as Logo } from '../../assets/LOGO_footer.svg';
+import { ReactComponent as Logo } from '../../assets/LOGO_footer.svg'; 
 import './style.scss'
 
-const Footer = () => {
+const Footer = () => { 
     return (
         <footer>
             <div className='footer__logo'><Logo /></div>
@@ -10,5 +10,5 @@ const Footer = () => {
         </footer>
     )
 }
-
-export default Footer;
+ 
+export default Footer; 
