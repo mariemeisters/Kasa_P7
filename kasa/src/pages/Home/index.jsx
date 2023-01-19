@@ -1,11 +1,12 @@
 import React from "react"; 
-import './style.scss'; 
+import './style.scss';
+import Banner from "../../components/Banner";
 
 function Home() {
   return (
-    <div>
-       <h1> Page d'Accueil</h1> 
-    </div>
+    
+       <Banner />
+    
   )
 }
 

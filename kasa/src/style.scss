@@ -1,6 +1,5 @@
 @use './utils/reset/normalize.css';
-
-.app__container {
+#root {
     //position: absolute;
     display: flex;
     flex-direction: column;
