@@ -7,7 +7,7 @@ const Banner = () => {
  
     return ( 
         <section>
-              
+              <div>test</div>
         </section>
     );
 };
