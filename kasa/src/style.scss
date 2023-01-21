@@ -1,6 +1,5 @@
 @use './utils/reset/normalize.css';
-#root {
-    //position: absolute;
+.app, #root {
     display: flex;
     flex-direction: column;
     align-items: center;

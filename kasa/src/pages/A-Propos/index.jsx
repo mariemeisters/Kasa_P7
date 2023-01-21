@@ -1,10 +1,13 @@
 import React from "react"; 
+import Banner from "../../components/Banner";
+import Collapse from "../../components/Collapse";
 
 function APropos() { 
   return (
-    <div>
-      <h1> Page à propos</h1> 
-    </div>
+    <>
+       <Banner />
+       <Collapse />
+      </>
   )
 }
 

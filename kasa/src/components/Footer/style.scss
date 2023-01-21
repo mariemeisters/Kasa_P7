@@ -1,25 +1,23 @@
 @import "../../utils/sass/colors";
 
 footer {
-    position: absolute;
-    bottom:0;
+    position: relative;
+    bottom: 0;
     width: 100%;
     height: 209px;
     background: $footer-color;
     text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
         .footer__logo {
             height: 39.44px;
-            position: absolute;
-            top: 66px;
+            padding-top: 66px;
         }
         p {
-            margin: 0px;
+            margin: 28.56px 0px 0px 0px;
             height: 46px;
             width: 100%;
-            position: absolute;
-            bottom: 29px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -34,12 +32,13 @@ footer {
 @media screen and (max-width: 767px) {   
  
     footer {
+        margin-top: 20px;
         .footer__logo {
-            top: 62px;
+            padding-top: 62px;
         }
         p {
+            margin: 0;
             height: 46px;
-            bottom: 62px;
             font-size: 12px;
             line-height: 17px;
         }

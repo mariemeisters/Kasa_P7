@@ -1,11 +1,11 @@
 @import "../../utils/sass/colors";
 
 header {
-    position: relative;  
+    //position: relative;  
     display: flex;
     width: 85%; // ce qui équivaut a 2px prêt aux dim de la maquette -- + de flexibilité
     height: 68px;
-    top: 40px;
+    padding-top: 40px;
     justify-content: space-between;
     align-items:center;
         .header__logo {
@@ -54,7 +54,7 @@ header {
     header {
         width: 90%; // ce qui équivaut a 2px prêt aux dim de la maquette -- + de flexibilité
         height: 47px;
-        top: 20px;
+        padding-top: 20px;
             .header__logo {
                 height: 47px;
                 width: 145px; 

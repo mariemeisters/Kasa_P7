@@ -1,0 +1,27 @@
+.collapse__container {
+    height: 100px;
+}
+
+.collapse__title__container {
+    display: flex;
+    align-items: center;
+}
+
+.collapse__title {
+    flex: 1;
+}
+
+.collapse__content {
+    transition: height 0.3s;
+    overflow: hidden;
+}
+
+.collapse__hidden {
+    height: 0;
+}
+
+.collapse__visible {
+    height: auto;
+}
+
+
