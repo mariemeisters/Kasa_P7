@@ -1,4 +1,4 @@
-#home__section, #apropos__section {
+#banner__home__section, #banner__apropos__section {
     position: relative;
     width: 85%;
     margin-top: 63px;
@@ -17,7 +17,7 @@
             color: #ffffff;
             z-index: 4;
         }
-        .container__banner, .container__banner__apropos {
+        .banner__container, .banner__container__apropos {
             height: 223px;
             z-index: 0;
             .banner__darken {
@@ -49,13 +49,13 @@
                 display: none;
             }
         }
-        .container__banner__apropos {
+        .banner__container__apropos {
             height: 223px;
             object-fit:fill
         }
 }
 
-#apropos__section { 
+#banner__apropos__section { 
     margin-top: 44px;
     h1 {
         display: none;
@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width: 767px) {   
-    #home__section, #apropos__section {
+    #banner__home__section, #banner__apropos__section {
         width: 90%;
         margin-top: 16px;
         h1 { // Atention aux "index". Ordre : backgroung container img (1), img(2), filtre darken img(3) & h1 (4)
@@ -73,7 +73,7 @@
             font-size: 24px;
             line-height: 24px;
         }
-        .container__banner, .container__banner__apropos {
+        .banner__container, .banner__container__apropos {
             height: 111px;
             border-radius: 10px;
             .banner__darken, .banner__background, .banner__img__mobile {
@@ -90,12 +90,12 @@
                 z-index: 2;
             }
         }
-        .container__banner__apropos{
+        .banner__container__apropos{
             height: 223px;
         }
 
     }
-    #apropos__section {
+    #banner__apropos__section {
         margin-top: 17px;
         h1 {
             display: none;
