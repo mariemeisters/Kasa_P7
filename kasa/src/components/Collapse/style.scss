@@ -1,10 +1,12 @@
 .collapse__container {
     height: 100px;
+    
 }
 
 .collapse__title__container {
     display: flex;
     align-items: center;
+    background-color: orange;
 }
 
 .collapse__title {
@@ -14,6 +16,8 @@
 .collapse__content {
     transition: height 0.3s;
     overflow: hidden;
+    background-color: red;
+
 }
 
 .collapse__hidden {
@@ -22,6 +26,10 @@
 
 .collapse__visible {
     height: auto;
+}
+
+.collapse__button {
+    border: none;
 }
 
 

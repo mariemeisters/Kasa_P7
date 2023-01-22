@@ -3,7 +3,7 @@ import './style.scss';
 
 
 const Collapse = () => {
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useState(true);
 
     return (
         <section className="collapse__container">
@@ -14,7 +14,7 @@ const Collapse = () => {
           </button>
         </div>
         <div className={`collapse__content ${isCollapsed ? 'collapse__hidden' : 'collapse__visible'}`}>
-          Contenu à afficher
+          <p>texte</p>
         </div>
     </section>
   );
