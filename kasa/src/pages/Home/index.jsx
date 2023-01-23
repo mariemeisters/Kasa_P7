@@ -4,6 +4,9 @@ import Banner from "../../components/Banner";
 import bannerHome from '../../assets/bannerHome.png';
 import bannerHomeMobile from '../../assets/bannerHomeMobile.png';
 import Card from "../../components/Card";
+import Logement from '../../data/logement.json'
+
+
 
 function Home() {
   return (
@@ -16,10 +19,10 @@ function Home() {
         bannerSrcDesktop={bannerHome}
         bannerSrcMobile={bannerHomeMobile}
         />
-       <Card />
+       <Card 
+       dataLogement={Logement}
+       redirection="fiche-logement/"/>
       </>
-      
-    
   )
 }
 

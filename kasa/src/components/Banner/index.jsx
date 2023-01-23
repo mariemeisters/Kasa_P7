@@ -4,7 +4,7 @@ import React from 'react';
 import './style.scss';
 
 
-const Banner = (props) => { 
+function Banner(props) { 
 
   return ( 
     <section id={props.bannerSection}>
@@ -16,7 +16,7 @@ const Banner = (props) => {
             <div className='banner__background'></div>
           </div>
     </section>
-);
+  )
 };
 
 export default Banner; 

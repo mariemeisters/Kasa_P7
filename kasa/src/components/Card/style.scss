@@ -1,7 +1,7 @@
 @import "../../utils/sass/colors";
 
 
-.background__container__cards {
+.card__container {
     margin: 43px 0 0 0 ;    
     height: 100%;
     background-color: #F7F7F7;
@@ -11,7 +11,7 @@
     justify-content: center;
     width: 85%;
     padding: 26px 0 23px 0; //56 (espace top) -30 (margin card) = 26 // même chose pour bottom > 23 (43 - 20 = 23)
-    .location__card {
+    .card__location {
         position: relative;
         display: flex;
         flex-direction: column;

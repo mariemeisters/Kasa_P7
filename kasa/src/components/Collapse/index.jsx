@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
+import ArrowCollapse from '../../assets/arrowOpen.png'
 import './style.scss'; 
 
 
-const Collapse = () => {
-    const [isCollapsed, setIsCollapsed] = useState(true);
+function Collapse(props) {
+  const [isClose, setisClose] = useState(true);
 
-    return (
-        <section className="collapse__container">
-        <div className="collapse__title__container">
-          <h2 className="collapse__title">Titre du collapse</h2>
-          <button className="collapse__button" aria-expanded={!isCollapsed} onClick={() => setIsCollapsed(!isCollapsed)}>
-            {isCollapsed ? 'Expand' : 'Collapse'}
-          </button>
-        </div>
-        <div className={`collapse__content ${isCollapsed ? 'collapse__hidden' : 'collapse__visible'}`}>
-          <p>texte</p>
-        </div>
-    </section>
+  return (
+      <section className="collapse">
+      <div className="collapse__container">
+        <h2 className="collapse__title">{props.collapseTitle}</h2>
+        <button className="collapse__button" aria-expanded={isClose} onClick={() => setisClose(!isClose)}>
+          {isClose ? <img src={ArrowCollapse} alt="flêche pour ouvrir le collapse" className='collapse__arrow__opening'/> 
+          : <img src={ArrowCollapse} alt="flêche pour fermer le collapse" className=''/> }
+        </button>
+      </div>
+      <div className={`collapse__content ${isClose ? 'collapse__hidden' : 'collapse__visible'}`}>
+        <p>{props.collapseTexte}</p>
+      </div>
+  </section>
   );
 }
-
 export default Collapse;
