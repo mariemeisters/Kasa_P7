@@ -9,10 +9,10 @@ import './style.scss';
 function APropos() { 
   return (
     <>
-      <Banner  bannerSection='banner__apropos__section'
-        bannerContainer='banner__container'
-        bannerImgDesktop='banner__img__desktop'
-        bannerImgMobile='banner__img__mobile'
+      <Banner  bannerSection='banner__apropos__section' // Style dans components/Banner
+        bannerContainer='banner__container'             // **
+        bannerImgDesktop='banner__img__desktop'         // **
+        bannerImgMobile='banner__img__mobile'           // **
         bannerAlt='Paysage avec vue sur des montagnes enneigées'
         bannerSrcDesktop={bannerAproposDesktop}
         bannerSrcMobile={bannerAproposMobile}

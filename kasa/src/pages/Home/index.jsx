@@ -7,7 +7,6 @@ import Card from "../../components/Card";
 import Logement from '../../data/logement.json'
 
 
-
 function Home() {
   return (
       <>
@@ -19,8 +18,7 @@ function Home() {
         bannerSrcDesktop={bannerHome}
         bannerSrcMobile={bannerHomeMobile}
         />
-       <Card 
-       dataLogement={Logement}
+       <Card dataCard={Logement}
        redirection="fiche-logement/"/>
       </>
   )

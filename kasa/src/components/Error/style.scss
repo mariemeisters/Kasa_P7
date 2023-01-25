@@ -1,0 +1,52 @@
+@import "../../utils/sass/colors";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-top: 169px;
+    &__img {
+        width: 597px;  
+    }
+    h2 {
+        color: $primary-color;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 66px 0 182px 0;
+    }
+    &__backhome {
+        color: $primary-color;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 129px; // rappel margin top footer = 30px soit : 159 - 30 = 129 px
+    }
+}
+
+@media screen and (max-width: 767px) {   
+    .error {
+        width: 90%;
+        margin-top: 195px;
+        &__img {
+            width: 198px;
+        }
+        h2 {
+            font-size: 18px; 
+            line-height: 26px;
+            margin: 11px 0 133px 0;
+        }
+        &__backhome {
+            text-align: center;
+            margin-bottom: 205px; 
+        }
+    }
+
+}

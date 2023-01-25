@@ -1,10 +1,18 @@
-import React from "react"; 
+import React from "react";
+
+import Error from "../../components/Error";
+import img404 from "../../assets/404.png"
+
 
 function Error404() { 
   return (
-    <div>
-      <h1> Page 404</h1>
-    </div>
+    <Error 
+    errorImg={img404} 
+    errorAlt="404 erreur"
+    errorH2="Oups! La page que vous demandez n'existe"
+    redirectionTo='/'
+    errorTxt="Retourner sur la page d’accueil"
+    />
   )
 }
 
