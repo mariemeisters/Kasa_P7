@@ -10,7 +10,7 @@ function APropos() {
   return (
     <>
       <Banner  bannerSection='banner__apropos__section' // Style dans components/Banner
-        bannerContainer='banner__container'             // **
+        bannerContainer='banner__container'
         bannerImgDesktop='banner__img__desktop'         // **
         bannerImgMobile='banner__img__mobile'           // **
         bannerAlt='Paysage avec vue sur des montagnes enneigées'
