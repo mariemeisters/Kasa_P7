@@ -1,0 +1,79 @@
+@import "../../utils/sass/colors";
+
+header {
+    //position: relative;  
+    display: flex;
+    width: 85%; // ce qui équivaut a 2px prêt aux dim de la maquette -- + de flexibilité
+    height: 68px;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items:center;
+        .header__logo {
+            display: flex;
+            height: 68px;
+            width: 210px; 
+        } 
+}
+.header__nav {
+    height: 34px;
+    width: 309px;
+    margin: 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+            li:first-of-type {
+                width: 136px;  
+            }  
+            li {
+                width: 116px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 34.22px;
+                text-align: right;
+                    a.active {
+                        text-decoration: underline;
+                        color: $primary-color;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+            }       
+      }
+}
+
+
+@media screen and (max-width: 767px) {   
+ 
+    header {
+        width: 90%; // ce qui équivaut a 2px prêt aux dim de la maquette -- + de flexibilité
+        height: 47px;
+        padding-top: 20px;
+            .header__logo {
+                height: 47px;
+                width: 145px; 
+            } 
+    }
+    .header__nav {
+        position: relative;
+        height: 17px;
+        width: 140px;
+        ul {
+            li:first-of-type {
+                width: 59px;  
+            }  
+            li {
+                width: 71px;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 17.11px;
+            }       
+        }
+    }
+}

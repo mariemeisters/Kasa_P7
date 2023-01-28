@@ -1,0 +1,91 @@
+@import "../../utils/sass/colors";
+
+.collapse {
+    margin-top: 30px;
+    height: 100%;
+    width: 71.5%;
+    &__container {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+        height: 47px;
+        padding: 0 32.6px 0 18px;
+        position: sticky; 
+        z-index: 2;
+        h2 {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            margin: 0;
+        }
+    }
+    &__hidden {
+        height: 0;
+        width: 0px;
+    }
+    &__button {
+        display: flex;
+        border: none;
+        background-color: $primary-color;
+    }
+    &__arrow--opening {
+        transform: rotate(180deg);
+    }
+    &__content {
+        border-radius: 5px;
+        background-color: $background-grey;
+        max-height: 0;
+        overflow: hidden;
+    }
+    &__visible {
+        display: flex;
+        position: relative;
+        top: -5px;
+        padding: 36px 27px 19px 18px;
+        margin: 0;
+        z-index: 0;
+        max-height: 300px;        
+    }
+    p {
+        color: $primary-color;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {   
+    .collapse {
+        margin-top: 20px; 
+        width: 90%;
+        &__container {
+            height: 30px; 
+            padding: 0 6.8px 0 11.5px;
+            h2 {
+                font-size: 13px;
+                line-height: 19px; 
+            }
+        }
+        &__arrow--opening, &__arrow--closing {
+            width: 15.2px;
+            height: 9px; 
+        }
+        &__visible {
+            padding: 23px 7px 23px 11.5px;  
+        }
+        p {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}
