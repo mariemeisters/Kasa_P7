@@ -1,0 +1,23 @@
+@import "../../utils/sass/colors";
+
+.rating {
+    width: 196px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    &__star {
+     width: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .rating {
+        width: 98px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between;
+        &__star {
+         width: 15px;
+        }
+    }
+}

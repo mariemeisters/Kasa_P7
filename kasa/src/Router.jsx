@@ -12,7 +12,7 @@ function Router() {
     <Routes>
       <Route path="/" element={<Home  />} />
       <Route path="/a-propos" element={<APropos />} />
-      <Route path="fiche-logement/:logementId" element={<FicheLogement />} />
+      <Route path="fiche-logement/:id" element={<FicheLogement />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   );

@@ -1,10 +1,11 @@
 @import "../../utils/sass/colors";
+@import "../../utils/sass/mixin";
 
 
 .card__container {
     margin: 43px 0 0 0;    
     height: 100%;
-    background-color: #F7F7F7;
+    background-color: $background-grey;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -43,10 +44,8 @@
             h2 {
                 //background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
                 margin: 0;
-                color: #FFFFFF;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
+                color: $secondary-color;
+                @include baseTypography;
                 font-size: 18px;
             }
         }
@@ -56,8 +55,9 @@
         color: $primary-color;
         box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.64);
         h2 {
-            background-color: rgba($primary-color, 0.5) ;
-            border-radius: 5px;
+            background-color:  rgba(black, 0.5) ;
+            padding: 5px;
+            border-radius: 10px;
             font-weight: 600;
         }     
     }
@@ -92,10 +92,7 @@
                 h2 {
                     //background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
                     margin: 0;
-                    color: #FFFFFF;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
+                    color: $secondary-color;
                     font-size: 18px;
                 }
             }

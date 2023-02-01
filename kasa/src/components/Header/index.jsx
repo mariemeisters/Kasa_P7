@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/Logo.svg';
 import './style.scss';
 
 
 const Header = () => { 
     let location = useLocation(); 
-
+    let navigation = useNavigate();
     return ( 
         <header>
-                <div className='header__logo'><Logo/></div>
+                <div className='header__logo'><Logo onClick={() => navigation("/")}/></div>
                 <nav className='header__nav'>
                     <ul>
                         <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}> 

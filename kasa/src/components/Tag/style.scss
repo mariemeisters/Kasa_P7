@@ -1,0 +1,58 @@
+@import "../../utils/sass/colors";
+@import "../../utils/sass/mixin";
+
+.container__tag {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tag__logement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    border-radius: 10px;
+    margin: 5px 10px 5px 0;
+    @include baseTypography;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $secondary-color;
+    min-width: 85px;  // largeur maquette 115, 115 - 30 (padding) = 85 / Pour + de cohérence
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) { 
+
+    .container__tag {
+        max-width: 100%;//
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .tag__logement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        border-radius: 5px;
+        margin: 5px 10px 5px 0;
+        font-size: 10px; //
+        line-height: 14.26px; //
+        min-width: 65px;  // largeur maquette 85, 85 - 20 (padding) = 65 / Pour + de cohérence
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
