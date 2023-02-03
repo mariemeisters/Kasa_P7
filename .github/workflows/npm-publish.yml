@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 16
       - run: cd kasa
-      - run: npm i
+      - run: npm install
 
   publish-npm:
     needs: build
