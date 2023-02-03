@@ -29,3 +29,5 @@ jobs:
       with:
         publish_dir: kasa/public
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+
