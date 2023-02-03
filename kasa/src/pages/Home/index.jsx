@@ -16,8 +16,10 @@ function Home() {
         bannerSrcDesktop={bannerHome}
         bannerSrcMobile={bannerHomeMobile}
        />
+      <section className="card__container" role='list' aria-label='Liste des disponibilités'>
        <Card dataCard={Logement}
        redirection="fiche-logement/"/> 
+      </section>
       </> 
   )
 }

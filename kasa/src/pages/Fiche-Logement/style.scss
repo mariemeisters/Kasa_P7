@@ -113,35 +113,26 @@
 }
 
 //-----------------------------RESPONSIVE-------------------------------
+
 @media screen and (max-width: 767px) { 
    .logement { //container page
-      margin-top:27px;//
-      width: 90%;//
+      margin-top:27px;
+      width: 90%;
       &__presentation { //container titre tag et details
         margin-top: 15px; 
-        position: relative;
-        display: flex;
         justify-content: space-between;
       }
-  } 
-  
-  .logement__titles { //container titres 
-    max-width: 78%;
-     &__title {
-        width: content;
-        margin: 0;
-        @include baseTypography;
-        font-size: 18px;//
+   } 
+   .logement__titles { //container titres 
+      &__title {
+        font-size: 18px;
         line-height: 25.67px;
-        text-align: left;
-        color: $primary-color;
-     }
-     &__location {
+      }
+      &__location {
         margin: 5px 0 0 0;
-        @include baseTypography;
-        font-size: 14px;//
-        line-height: 19.96px; //
-     }
+        font-size: 14px;
+        line-height: 19.96px; 
+      }
   }
   
   .logement__tags {
@@ -150,7 +141,7 @@
   }
   
   .logement__details {
-      order: 3;//
+      order: 3;
       text-align: center;
       flex-direction: row-reverse; 
       justify-content: space-between;
@@ -159,18 +150,16 @@
       width: 100%;
       margin-top: 10px;
      &__host {
-        position: relative;
-        top: 0px;  
+        top: 0px;  //relative
      }
      &__rating {
-        position: relative;
-        bottom: 0px;
+        bottom: 0px; //relative
      }
   } 
   
   .logement__collapse{
-     margin-top: 16px;//
-     flex-wrap: wrap; //
+     margin-top: 16px;
+     flex-wrap: wrap; 
   }
   
   // ------------------ MODIFICATION COMPOSANT ------------------- //
@@ -178,24 +167,21 @@
      width: 100%;
      margin-bottom: 20px;
      .composant__collapse {
-        height: 29.93px; //
-        padding: 0 6.8px 0 11.51px;//
-        border-radius: 5px;//
+        height: 29.93px; 
+        padding: 0 6.8px 0 11.51px;
+        border-radius: 5px;
         h2 {
-           font-size: 13px;//
-           line-height: 18.54px;//
+           font-size: 13px;
+           line-height: 18.54px;
         }
         &__button {
-        display: flex;
-        border: none;
-        background-color: $primary-color;
            img {
               width: 15.2px; 
            }
         }
         &__visible {
-           padding: 23.02px 6.91px 1.3px 11.51px;//
-           min-height: fit-content; // 23+1 (padding) = 24, soit 143 (hauteur maquette) -24
+           padding: 23.02px 6.91px 1.3px 11.51px;
+           min-height: fit-content; 
            p {
               font-size: 12px;
               line-height: 17px;

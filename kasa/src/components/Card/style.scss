@@ -1,26 +1,15 @@
 @import "../../utils/sass/colors";
 @import "../../utils/sass/mixin";
 
-
-.card__container {
-    margin: 43px 0 0 0;    
-    height: 100%;
-    background-color: $background-grey;
-    border-radius: 10px;
+.card__data {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 85%;
-    padding: 26px 0 23px 0; //total 56 px (top) -30 (margin card) = 26 // même chose pour bottom > total px 43(bottom) -20(margin card) = 23
-    .card__data {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        width: 340px;
-        height: 340px;
-        margin: 30px 30px 20px 30px;
-        //background: linear-gradient(180deg, $primary-color 0%, #893737 100%);
+    flex-direction: column;
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    margin: 30px 30px 20px 30px;
+    //background: linear-gradient(180deg, $primary-color 0%, #893737 100%);
         &__img{
             display: flex;
             width: 100%;
@@ -61,14 +50,10 @@
             font-weight: 600;
         }     
     }
-}
+
 
 @media screen and (max-width: 767px) {   
-    .card__container {
-        margin: 22px 0 0 0 ;    
-        background-color: transparent;
-        width: 90%;
-        padding: 0;
+
         .card__data {
             position: relative;
             display: flex;
@@ -97,5 +82,5 @@
                 }
             }
         }
-    }
+    
 }

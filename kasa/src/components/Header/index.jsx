@@ -9,7 +9,13 @@ const Header = () => {
     let navigation = useNavigate();
     return ( 
         <header>
-                <div className='header__logo'><Logo onClick={() => navigation("/")}/></div>
+                <div className='header__logo'>
+                    <Logo onClick={() => navigation("/")} tabindex="0" onKeyDown={(event) =>{
+                        if (event.key === 'Enter') {
+                            navigation("/")
+                        }}}
+                    />
+                </div>
                 <nav className='header__nav'>
                     <ul>
                         <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}> 

@@ -4,12 +4,24 @@ import './style.scss';
 
 function Card(props) {
   const navigation = useNavigate()
+
   try {
     return (
-      <section className="card__container" role='list' aria-label='Liste des disponibilités'>
+      <>
         {props.dataCard.map((element) => {
           return (
-            <article key={element.id} className="card__data" onClick={() => navigation(`${props.redirection}${element.id}`)} role='listitem'>
+            
+            <article key={element.id} className="card__data" onClick={() => navigation(`${props.redirection}${element.id}`)} 
+            role='listitem' tabindex="0" onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                navigation(`${props.redirection}${element.id}`)
+              }}
+            }>
+                <div id="container__loader">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+        </div> 
               <img src={element.cover} alt={`${element.title} - ${element.location}.`} className='card__data__img'/>
               <div className="card__data__title">
                 <h2>{element.title}</h2>
@@ -17,10 +29,10 @@ function Card(props) {
             </article>
           )
         })}
-      </section>
+        </>
     )
-  } catch(error) {
-    console.log(error)
+  } catch(error) { // permets d'identifier plus facilement l'élément qui provoque l'erreur
+    console.log(error) 
   }
 }
 
@@ -36,10 +48,4 @@ export default Card;
 //   }
 // }
 // /**
-//  * Personalisation de la balise ALT pour les logements
-//  */
-// function createAltLocation(title, location, description, equipments, rating) {
-//   return (
-//   `${title} en ${location}. ${description}. Notation : ${rating} étoiles`
-//   )
-// }
+

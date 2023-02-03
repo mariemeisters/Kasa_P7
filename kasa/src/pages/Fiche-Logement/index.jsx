@@ -15,7 +15,7 @@ function FicheLogement() {
     const LogementById = dataLogement.find((element) => element.id === id)
 
     if (!LogementById) { // si l'id est différente de l'ID de l'url 
-        return <Navigate to="/error"/>
+        return <Navigate to="/error"/> // page inexistante 
      }
 
      //destructuration affectée à l'objet logementById qui contient les datas
