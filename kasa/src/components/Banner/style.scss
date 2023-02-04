@@ -50,8 +50,7 @@
             .banner__img__mobile, .inactive {
                 display: none;
             }
-        }
-       
+        }  
 }
 
 #banner__apropos__section { // <-- mise en page pour seconde banner
@@ -61,7 +60,10 @@
     }
 }
 
-@media screen and (max-width: 767px) {   
+// --------------------------------------------------------------//
+// ---------------------{RESPONSIVE MOBILE}----------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 500px) {   
     #banner__home__section, #banner__apropos__section {
         width: 90%;
         margin-top: 16px;
@@ -89,7 +91,6 @@
                 z-index: 2;
             }
         }
-
     }
     #banner__apropos__section { // <-- mise en page pour seconde banner
         margin-top: 17px;
@@ -101,3 +102,24 @@
         }
     }
 }
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+    #banner__home__section, #banner__apropos__section {
+        width: 85%;
+        margin-top: 17px;
+        h1 { 
+            font-size: 28px;
+            line-height: 28px;
+        }
+        .banner__container {
+            height: 180px;
+        }
+        .banner__img__desktop {
+            object-fit: cover;
+        }
+    }
+}
+
+    

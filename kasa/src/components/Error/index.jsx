@@ -4,7 +4,6 @@ import './style.scss';
 
 
 function Error(props) {
-
     return (
         <section className="error">
             <img src={props.errorImg} alt={props.errorAlt} className="error__img"/>

@@ -112,9 +112,10 @@
    }
 }
 
-//-----------------------------RESPONSIVE-------------------------------
-
-@media screen and (max-width: 767px) { 
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE MOBILE}---------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) { 
    .logement { //container page
       margin-top:27px;
       width: 90%;
@@ -190,6 +191,68 @@
      }
   }
 }
-   
 
-// 780-1100 tablette VOIR KEYBOARD FOCUSABLE
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+   .logement { 
+      &__presentation { 
+        margin-top: 15px; 
+      }
+   } 
+   .logement__titles { //container titres 
+      &__title {
+        font-size: 24px;
+        line-height: 25.67px;
+      }
+      &__location {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        line-height: 19.96px; 
+      }
+  }
+  .logement__tags {
+     margin-top:5px;
+     order: 2;
+  }
+  .logement__details {
+      order: 3;
+      flex-direction: row-reverse; 
+      justify-content: space-between;
+      align-items: center; 
+      position: relative; 
+      width: 100%;
+     &__host {
+        top: 0px;  //relative
+     }
+     &__rating {
+        bottom: 0px; //relative
+     }
+  } 
+  // ------------------ MODIFICATION COMPOSANT ------------------- //
+  .logement__description, .logement__equipement {
+     .composant__collapse {
+        height: 29.93px; 
+        padding: 0 6.8px 0 11.51px;
+        border-radius: 5px;
+        h2 {
+           font-size: 15px;
+           line-height: 18.54px;
+        }
+        &__button {
+           img {
+              width: 20.2px; 
+           }
+        }
+        &__visible {
+           padding: 23.02px 6.91px 1.3px 11.51px;
+           min-height: fit-content; 
+           p {
+              font-size: 12px;
+              line-height: 17px;
+           }
+        }
+     }
+  }
+}
