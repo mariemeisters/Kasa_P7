@@ -12,15 +12,15 @@ function Card(props) {
           return (
             
             <article key={element.id} className="card__data" onClick={() => navigation(`${props.redirection}${element.id}`)} 
-            role='listitem' tabindex="0" onKeyDown={(event) => {
+            role='listitem' tabIndex="0" onKeyDown={(event) => {
               if (event.key === 'Enter') {
                 navigation(`${props.redirection}${element.id}`)
               }}
             }>
                 <div id="container__loader">
-            <span class="dot dot1"></span>
-            <span class="dot dot2"></span>
-            <span class="dot dot3"></span>
+            <span className="dot dot1"></span>
+            <span className="dot dot2"></span>
+            <span className="dot dot3"></span>
         </div> 
               <img src={element.cover} alt={`${element.title} - ${element.location}.`} className='card__data__img'/>
               <div className="card__data__title">

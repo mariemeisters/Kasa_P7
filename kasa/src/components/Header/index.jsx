@@ -10,7 +10,7 @@ const Header = () => {
     return ( 
         <header>
                 <div className='header__logo'>
-                    <Logo onClick={() => navigation("/")} tabindex="0" onKeyDown={(event) =>{
+                    <Logo onClick={() => navigation("/")} tabIndex="0" onKeyDown={(event) =>{
                         if (event.key === 'Enter') {
                             navigation("/")
                         }}}
