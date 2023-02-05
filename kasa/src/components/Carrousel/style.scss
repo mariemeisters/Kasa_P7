@@ -36,6 +36,9 @@
             background-color: $background-darkgrey;
         }
     }
+    &__content--off {
+        display: none;
+    }
     &__number {
         color: #fff;
         position:absolute;

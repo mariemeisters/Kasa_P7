@@ -2,8 +2,12 @@ import React from "react";
 import './style.scss';
 
 /**
- * Renvoi le nom et la photo de la personne qui loue son bien
- * hostlogement correspond à "host" dans les datas
+ * Composant fonctionnel affichant les information de l'utilisateur ayant posté l'annonce,
+ * suite à la destructuration selon l'ID du logement (page fiche-logement)
+ * @param {object} hostLogement - Element du composant : nom et photo de l'hôte
+ * @param {string} hostLogement.name - Nom de l'hôte
+ * @param {string} hostLogement.picture - Chemin vers la photo de l'hôte
+ * @returns {JSX.Element} Composant Host généré dynamiquement selon les données  
  */
 function Host({hostLogement}) {
     return (
