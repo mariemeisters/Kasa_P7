@@ -1,0 +1,39 @@
+@import "../../utils/sass/colors";
+
+.rating {
+    width: 196px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    &__star {
+     width: 30px;
+    }
+}
+// --------------------------------------------------------------//
+// ---------------------{RESPONSIVE MOBILE----------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) { 
+    .rating {
+        width: 98px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between;
+        &__star {
+         width: 15px;
+        }
+    }
+}
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+    .rating {
+        width: 140px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        &__star {
+         width: 22px;
+        }
+    }
+}

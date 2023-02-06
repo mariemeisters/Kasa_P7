@@ -1,0 +1,258 @@
+@import "../../utils/sass/colors";
+@import "../../utils/sass/mixin";
+
+.logement { //container page
+    margin-top:20px;
+    width: 85%;
+    position: relative;
+    &__presentation { //container titre tag et details
+      margin-top: 30px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+} 
+
+.logement__titles { //container titres 
+  max-width: 78%;
+   &__title {
+      width: content;
+      margin: 0;
+      @include baseTypography;
+      font-size: 36px;
+      line-height: 51px;
+      text-align: left;
+      color: $primary-color;
+   }
+   &__location {
+      margin: 0;
+      @include baseTypography;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+      color: $primary-color;
+   }
+}
+
+.logement__tags {
+   flex-basis: 100%;
+   margin-top:15px;
+}
+
+.logement__details {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   position: absolute;
+   right: 0;
+   &__host {
+      position: relative;
+      top: -5px;
+     
+   }
+   &__rating {
+      position: relative;
+      bottom: -12px;
+   }
+} 
+
+.logement__collapse{
+   margin-top: 20px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+// ------------------ MODIFICATION COMPOSANT ------------------- //
+.logement__description, .logement__equipement {
+   width: 47%;
+   .composant__collapse {
+      height: 52px; //
+      padding: 0 11.8px 0 20px;
+      border-radius: 10px;
+      h2 {
+         @include baseTypography;
+         font-size: 18px;
+         line-height: 26px;
+      }
+      &__content {
+         border-radius: 5px;
+         background-color: $background-grey;
+         max-height: 0;
+      }
+      &__button { 
+      display: flex;
+      border: none;
+      background-color: $primary-color;
+         img {
+            width: 26.4px;
+         }
+      }
+      &__visible {
+         padding: 40px 12px 53px 20px;
+         max-height: fit-content;
+         min-height: 156px; // 40+53 (padding) = 93, soit 249 (hauteur maquette) -93
+         span {
+            width: 100%;
+         }
+         p {
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            @include baseTypography;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25.67px;
+            align-content: stretch;
+            width: 98%;
+            text-align: justify;
+         }
+      }
+   }
+}
+
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE MOBILE}---------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) { 
+   .logement { //container page
+      margin-top:27px;
+      width: 90%;
+      &__presentation { //container titre tag et details
+        margin-top: 15px; 
+        justify-content: space-between;
+      }
+   } 
+   .logement__titles { //container titres 
+      &__title {
+        font-size: 18px;
+        line-height: 25.67px;
+      }
+      &__location {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        line-height: 19.96px; 
+      }
+  }
+  
+  .logement__tags {
+     margin-top:5px;
+     order: 2;
+  }
+  
+  .logement__details {
+      order: 3;
+      text-align: center;
+      flex-direction: row-reverse; 
+      justify-content: space-between;
+      align-items: center; 
+      position: relative; 
+      width: 100%;
+      margin-top: 10px;
+     &__host {
+        top: 0px;  //relative
+     }
+     &__rating {
+        bottom: 0px; //relative
+     }
+  } 
+  
+  .logement__collapse{
+     margin-top: 16px;
+     flex-wrap: wrap; 
+  }
+  
+  // ------------------ MODIFICATION COMPOSANT ------------------- //
+  .logement__description, .logement__equipement {
+     width: 100%;
+     margin-bottom: 20px;
+     .composant__collapse {
+        height: 29.93px; 
+        padding: 0 6.8px 0 11.51px;
+        border-radius: 5px;
+        h2 {
+           font-size: 13px;
+           line-height: 18.54px;
+        }
+        &__button {
+           img {
+              width: 15.2px; 
+           }
+        }
+        &__visible {
+           padding: 23.02px 6.91px 1.3px 11.51px;
+           min-height: fit-content; 
+           p {
+              font-size: 12px;
+              line-height: 17px;
+           }
+        }
+     }
+  }
+}
+
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+   .logement { 
+      &__presentation { 
+        margin-top: 15px; 
+      }
+   } 
+   .logement__titles { //container titres 
+      &__title {
+        font-size: 24px;
+        line-height: 25.67px;
+      }
+      &__location {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        line-height: 19.96px; 
+      }
+  }
+  .logement__tags {
+     margin-top:5px;
+     order: 2;
+  }
+  .logement__details {
+      order: 3;
+      flex-direction: row-reverse; 
+      justify-content: space-between;
+      align-items: center; 
+      position: relative; 
+      width: 100%;
+     &__host {
+        top: 0px;  //relative
+     }
+     &__rating {
+        bottom: 0px; //relative
+     }
+  } 
+  // ------------------ MODIFICATION COMPOSANT ------------------- //
+  .logement__description, .logement__equipement {
+     .composant__collapse {
+        height: 29.93px; 
+        padding: 0 6.8px 0 11.51px;
+        border-radius: 5px;
+        h2 {
+           font-size: 15px;
+           line-height: 18.54px;
+        }
+        &__button {
+           img {
+              width: 20.2px; 
+           }
+        }
+        &__visible {
+           padding: 23.02px 6.91px 1.3px 11.51px;
+           min-height: fit-content; 
+           p {
+              font-size: 12px;
+              line-height: 17px;
+           }
+        }
+     }
+  }
+}

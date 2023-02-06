@@ -1,6 +1,6 @@
 {
-  "short_name": "Kasa - Location immobilière",
   "name": "Kasa",
+  "short_name": "Kasa - Location immobilière",
   "icons": [
     {
       "src": "./logo/Logo-64.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }

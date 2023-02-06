@@ -1,29 +1,23 @@
 @import "../../utils/sass/colors";
+@import "../../utils/sass/mixin";
 
-.collapse {
-    margin-top: 30px;
-    height: 100%;
-    width: 71.5%;
-    &__container {
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: $primary-color;
-        height: 47px;
-        padding: 0 32.6px 0 18px;
-        position: sticky; 
-        z-index: 2;
-        h2 {
-            font-family: Montserrat;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 34px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: white;
-            margin: 0;
-        }
+.composant__collapse {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    height: 47px;
+    padding: 0 32.6px 0 18px;
+    position: sticky; 
+    z-index: 2;
+    h2 {
+        @include baseTypography;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: left;
+        color: $secondary-color;
+        margin: 0;
     }
     &__hidden {
         height: 0;
@@ -33,6 +27,8 @@
         display: flex;
         border: none;
         background-color: $primary-color;
+        width: 80%;
+        justify-content: flex-end;
     }
     &__arrow--opening {
         transform: rotate(180deg);
@@ -42,6 +38,13 @@
         background-color: $background-grey;
         max-height: 0;
         overflow: hidden;
+        color: $primary-color;
+        @include baseTypography;
+        font-weight: 400; // dernier déclaré donc + fort que "baseTypography"
+        font-size: 24px;
+        line-height: 34px;
+        text-align: left;
+        margin: 0;
     }
     &__visible {
         display: flex;
@@ -52,29 +55,21 @@
         z-index: 0;
         max-height: 300px;        
     }
-    p {
-        color: $primary-color;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 34px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin: 0;
-    }
 }
-
-@media screen and (max-width: 767px) {   
-    .collapse {
-        margin-top: 20px; 
-        width: 90%;
-        &__container {
-            height: 30px; 
-            padding: 0 6.8px 0 11.5px;
-            h2 {
-                font-size: 13px;
-                line-height: 19px; 
-            }
+// --------------------------------------------------------------//
+// ---------------------{RESPONSIVE MOBILE}----------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) {   
+    .composant__collapse {
+        height: 30px; 
+        padding: 0 6.8px 0 11.5px;
+        h2 {
+            font-size: 13px;
+            line-height: 19px; 
+        }
+        &__content {
+            font-size: 12px;
+            line-height: 17px;
         }
         &__arrow--opening, &__arrow--closing {
             width: 15.2px;
@@ -83,9 +78,25 @@
         &__visible {
             padding: 23px 7px 23px 11.5px;  
         }
-        p {
-            font-size: 12px;
-            line-height: 17px;
+    } 
+}
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+    .composant__collapse {
+        height: 40px; 
+        padding: 0 15px 0 11.5px;
+        h2 {
+            font-size: 18px;
+            line-height: 23px;
         }
-    }
+        &__content {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__visible {
+            padding: 20px 7px 20px 11.5px;  
+        }
+    } 
 }

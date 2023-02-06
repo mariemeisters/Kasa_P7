@@ -2,7 +2,11 @@ import React from 'react';
 import { ReactComponent as Logo } from '../../assets/LOGO_footer.svg'; 
 import './style.scss'
 
-const Footer = () => { 
+/**
+ * Composant fonctionnel affichant le logo de Kasa et le copyright.
+ * @returns {JSX.Element} Footer de la page
+ */
+function Footer(){  
     return (
         <footer>
             <div className='footer__logo'><Logo /></div>

@@ -1,0 +1,24 @@
+@import '../../utils/sass/colors.scss';
+
+.card__container {
+    margin: 43px 0 0 0;    
+    height: 100%;
+    background-color: $background-grey;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    padding: 26px 0 23px 0; //total 56 px (top) -30 (margin card) = 26 // même chose pour bottom > total px 43(bottom) -20(margin card) = 23
+}
+// --------------------------------------------------------------//
+// ---------------------{RESPONSIVE MOBILE}----------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) {   
+    .card__container {
+        margin: 22px 0 0 0 ;    
+        background-color: transparent;
+        width: 90%;
+        padding: 0;
+    }
+}

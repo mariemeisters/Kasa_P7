@@ -6,22 +6,20 @@ import bannerHomeMobile from '../../assets/bannerHomeMobile.png';
 import Card from "../../components/Card";
 import Logement from '../../data/logement.json'
 
-
 function Home() {
   return (
       <>
        <Banner  bannerSection='banner__home__section'
-        bannerContainer='banner__container'
         bannerH1='Chez vous, partout et ailleurs'             
-        bannerImgDesktop='banner__img__desktop'
-        bannerImgMobile='banner__img__mobile'
         bannerAlt='Paysage avec vue sur des falaises et la mer'
         bannerSrcDesktop={bannerHome}
         bannerSrcMobile={bannerHomeMobile}
        />
+      <section className="card__container" role='list' aria-label='Liste des disponibilités'>
        <Card dataCard={Logement}
-       redirection="fiche-logement/"/>
-      </>
+       redirection="fiche-logement/"/> 
+      </section>
+      </> 
   )
 }
 

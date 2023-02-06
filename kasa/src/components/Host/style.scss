@@ -1,0 +1,57 @@
+@import "../../utils/sass/colors";
+@import "../../utils/sass/mixin";
+
+.host {
+    display: flex;
+    align-items: center;
+    &__name {
+        margin: 0;
+        @include baseTypography;
+        font-size: 18px;
+        line-height: 26px;
+        color:$primary-color;
+        text-align: right;
+        width: 93px;
+        padding-right: 10px;
+    }
+    &__picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: $background-darkgrey;
+    }
+}
+// --------------------------------------------------------------//
+// ---------------------{RESPONSIVE MOBILE}----------------------//
+// --------------------------------------------------------------//
+@media screen and (max-width: 501px) { 
+    .host {
+        &__name {
+            font-size: 12px;
+            color:$primary-color;
+            padding-right: 10.5px;
+            line-height: 17.11px;
+            width: 55%;
+        }
+        &__picture {
+            width: 32px;
+            height: 32px; 
+        }
+    }
+}
+// --------------------------------------------------------------//
+// --------------------{RESPONSIVE TABLETTE}---------------------//
+// --------------------------------------------------------------//
+@media all and (min-width: 501px) and (max-width: 960px) {
+    .host {
+        &__name {
+            font-size: 14px;
+            line-height: 16px;
+            width: 55%;
+        }
+        &__picture {
+            width: 50px;
+            height: 50px; 
+        }
+    }
+}
