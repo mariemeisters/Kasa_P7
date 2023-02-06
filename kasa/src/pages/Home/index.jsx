@@ -6,7 +6,6 @@ import bannerHomeMobile from '../../assets/bannerHomeMobile.png';
 import Card from "../../components/Card";
 import Logement from '../../data/logement.json'
 
-
 function Home() {
   return (
       <>
