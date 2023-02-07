@@ -16,9 +16,12 @@ import './style.scss';
 function Error(error404) {
     return (
         <section className="error">
-            <img src={error404.errorImg} alt={error404.errorAlt} className="error__img"/>
-            <h2>{error404.errorH2}</h2>
-            <Link to={error404.redirectionTo} className="error__backhome" aria-label="Retour">{error404.errorTxt}</Link>
+            <div className="error__title">
+                <h2>404</h2>
+            </div>
+            <p className="error__desktop">{error404.errorTxt}</p>
+            <p className="error__mobile">{error404.errorTxtBreakOne}<br/>{error404.errorTxtBreakTwo}</p>
+            <Link to={error404.redirectionTo} className="error__backhome" aria-label="Retour">{error404.errorTxtRedirection}</Link>
         </section>
     )
  }
