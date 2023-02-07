@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     &__star {
-     width: 30px;
+     width: 30px; // Si vous souhaitez modifier la couleur de l'image, rendez-vous sur le fichier SVG et changer "fill".
     }
 }
 // --------------------------------------------------------------//
