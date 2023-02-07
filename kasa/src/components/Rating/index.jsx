@@ -5,7 +5,7 @@ import starFull from "../../assets/starFullRating.svg";
 
 /** 
  * Composant fonctionnel pour l'affichage des étoiles pour représenter la note du logement (suite à la destructuration affectée à l'objet logementById).
- * Méthode map : itére sur un tableau de nombres (1 à 5) pour générer les étoiles selon la note du logement.
+ * Méthode map sur le tableau de nombres (1 à 5), compare la note du logement pour générer les étoiles pleines ou vide
  * Si la note du logement est supérieure ou égale au score par index du tableau [1,2,3,4,5] 
  * -> étoile pleine, sinon -> étoile vide 
  * 

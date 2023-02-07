@@ -14,7 +14,7 @@ function Header() {
     let navigation = useNavigate();
     return ( 
         <header>
-                <div className='header__logo' data-testid="header-logo">
+                <div className='header__logo'>
                     <Logo onClick={() => navigation("/")} tabIndex="0" onKeyDown={(event) =>{
                         if (event.key === 'Enter') {
                             navigation("/")

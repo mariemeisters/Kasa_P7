@@ -4,7 +4,7 @@ import './style.scss';
 
 /**
  * Composant fonctionnel qui implémente le comportement d'un collapse pour masquer et afficher le contenu selon son état.
- * Utilisation du hook "useState" pour hérer l'état de "isClose" et mettre à jour l'affichage.
+ * Utilisation du hook "useState" pour gérer l'état de "isClose" et mettre à jour l'affichage.
  * @param {object} contentCollapse - Elements du composant : titre, texte
  * @param {string} contentCollapse.collapseTitle - Titre du collapse
  * @param {string} contentCollapse.ArrowCollapse - Chemin vers l'image utilisée pour le bouton
