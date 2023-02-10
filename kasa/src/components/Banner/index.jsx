@@ -17,12 +17,11 @@ function Banner(elementBanner) {
         <h1>{elementBanner.bannerH1}</h1>
           <div className='banner__container'>
             <div className='banner__darken' aria-hidden='true'></div>
-            <img src={elementBanner.bannerSrcDesktop} alt={elementBanner.bannerAlt} className='banner__img__desktop' />
-            <img src={elementBanner.bannerSrcMobile} alt={elementBanner.bannerAlt} className='banner__img__mobile' />
+            <img src={elementBanner.bannerSrc} alt={elementBanner.bannerAlt} className='banner__img' />
             <div className='banner__background' aria-hidden='true'></div>
           </div>
     </section>  
   )
 };
 
-export default Banner;   
+export default Banner;

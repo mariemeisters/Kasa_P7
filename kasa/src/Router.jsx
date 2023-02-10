@@ -6,7 +6,10 @@ import FicheLogement from './pages/Fiche-Logement';
 import Error404 from './pages/Error404';
 import APropos from './pages/A-Propos';
 
-
+/**
+ * Routes définit les différentes routes de l'app
+ * @returns {JSX.Element} Routes Home, A propos, Fiche-logement (par ID) & Error
+ */
 function Router() {
   return (
     <Routes>
@@ -18,4 +21,4 @@ function Router() {
   );
 }
 
-export default Router;
+export default Router; 

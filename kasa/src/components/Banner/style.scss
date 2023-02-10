@@ -31,12 +31,13 @@
                 border-radius: 25px;
                 z-index: 3;
             }
-            .banner__img__desktop {
+            .banner__img {
                 position: absolute;
                 height: 100%;
                 width: 100%;
                 border-radius: 25px;
                 z-index: 2;
+                object-fit: cover;
             }
             .banner__background {
                 background: $secondary-color;
@@ -46,9 +47,6 @@
                 top: 0;
                 border-radius: 25px;
                 z-index: 1;
-            }
-            .banner__img__mobile, .inactive {
-                display: none;
             }
         }  
 }
@@ -77,18 +75,16 @@
         .banner__container {
             height: 111px;
             border-radius: 10px;
-            .banner__darken, .banner__background, .banner__img__mobile {
+            .banner__darken, .banner__background {
                 border-radius: 10px;
             }
-            .banner__img__desktop {
-                display: none;
-            }
-            .banner__img__mobile {
+            .banner__img {
                 display: flex;
                 position: absolute;
                 height: 100%;
                 width: 100%;
                 z-index: 2;
+                border-radius: 10px;
             }
         }
     }
@@ -115,9 +111,6 @@
         }
         .banner__container {
             height: 180px;
-        }
-        .banner__img__desktop {
-            object-fit: cover;
         }
     }
 }

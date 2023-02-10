@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import { ReactComponent as Logo } from '../../assets/LOGO_footer.svg'; 
 import './style.scss'
 

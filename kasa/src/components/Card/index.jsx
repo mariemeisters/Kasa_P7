@@ -12,7 +12,7 @@ import './style.scss';
  * @param {object} data.dataCard - Données du tableau utilisées pour afficher les éléments de la carte
  * @param {Function} data.redirection - Gere la navigation entre les pages
  * @returns {JSX.Element} carte générée dynamiquement en fonction des données transmises 
- */
+ */ 
 function Card(data) {
   const navigation = useNavigate()
 

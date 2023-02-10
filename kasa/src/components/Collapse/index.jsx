@@ -12,7 +12,7 @@ import './style.scss';
  * @returns {JSX.Element} - Composant Collapse généré dynamiquement selon les données transmises
  */
 function Collapse(contentCollapse) {
-  const [isClose, setisClose] = useState(true);
+  const [isClose, setisClose] = useState(true); 
 
   return (
     <>

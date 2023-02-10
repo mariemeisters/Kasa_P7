@@ -13,7 +13,7 @@ import './style.scss';
  */
 function Carrousel({gallery}) { // destructuration pour décomposer
 
-    const [slide, setSlide] = useState(0) //var. état > état initial
+    const [slide, setSlide] = useState(0) //var. état > état initial 
     const slideTotal = gallery.length // vigileance : exemple pour 5 img => [0,1,2,3,4] soit slide 4 = image 5
 
     const Back = () => { //permets de faire défiler les images vers la gauche en diminuant la valeur de "slide". 

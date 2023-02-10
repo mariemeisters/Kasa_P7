@@ -1,18 +1,17 @@
 import React from "react"; 
 import Banner from "../../components/Banner";
-import bannerAproposDesktop from '../../assets/bannerApropos.png';
-import bannerAproposMobile from '../../assets/bannerAproposMobile.png';
+import BannerApropos from '../../assets/banner_Apropos.png';
+
 import Collapse from "../../components/Collapse";
 import './style.scss';
 
 
-function APropos() { 
+function APropos() {  
   return (
     <>
       <Banner bannerSection='banner__apropos__section' // Style dans components/Banner// **
         bannerAlt='Paysage avec vue sur des montagnes enneigées'
-        bannerSrcDesktop={bannerAproposDesktop}
-        bannerSrcMobile={bannerAproposMobile}
+        bannerSrc={BannerApropos}
       />
       <section className="collapse">
         <Collapse collapseTitle="Fiabilité"

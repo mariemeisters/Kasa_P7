@@ -29,4 +29,4 @@ function Rating({ratingLogement}) {
       );
 }
 
-export default Rating
+export default Rating; 

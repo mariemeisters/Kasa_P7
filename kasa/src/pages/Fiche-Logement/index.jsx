@@ -21,11 +21,11 @@ function FicheLogement() {
     const LogementById = dataLogement.find((element) => element.id === id) 
 
     if (!LogementById) { // si l'id est différente de l'ID de l'url 
-        return <Navigate to="/error"/> // fait naviguer l'utilisateur vers une page page inexistante ce qui appelera le composant Error. 
+        return <Navigate to="/page-inexistante"/> // fait naviguer l'utilisateur vers une page ce qui renvoie à l'utilisateur le composant error. 
      }
 
-     //destructuration affectée à l'objet logementById qui contient les datas
-    const {title, pictures, description, host, rating, location, equipments, tags} = LogementById 
+     //destructuration affectée à l'objet logementById qui contient les datas selon l'ID
+    const {title, pictures, description, host, rating, location, equipments, tags} = LogementById  
     return (
         <div className="logement">
             <Carrousel gallery={pictures} />
